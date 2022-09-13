@@ -29,6 +29,26 @@ public class SPTV21_Arrays {
         System.out.println("sum = "+sum);
         System.out.println("Maximum number = " + maxNum);
         System.out.println("Minimum number = " + minNum);
+        
+        System.out.println("-------Демонтрация массивов [][]-----------");
+        int[][] arr2 = new int[10][10];
+        for(int i=0;i<arr2.length;i++) {
+            for (int j = 0; j < arr2[i].length; j++) {
+                arr2[i][j] = random.nextInt(100);
+            }
+        }
+        for(int i=0;i<arr2.length;i++) {
+            for (int j = 0; j < arr2[i].length; j++){
+                System.out.printf("%4d", arr2[i][j]);
+                if(minNum > arr2[i][j]) minNum = arr2[i][j];
+                if(maxNum < arr2[i][j]) maxNum = arr2[i][j];
+                sum += arr2[i][j];
+            }
+            System.out.println();
+        }
+        System.out.println("Максимальное число: " + maxNum);
+        System.out.println("Мнимальное число: " + minNum);
+        System.out.println("Сумма: " + sum);
 
 
     }
