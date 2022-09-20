@@ -97,7 +97,7 @@ public class SPTV21_Arrays {
                         sumUp += arr2[d][i];
                     }
                     d++;
-                    System.out.println("Сумма елементов строки " + s + " равна: " + sumUp);
+                    System.out.println("Сумма елементов строки " + d + " равна: " + sumUp);
                     sumUp = 0;
                 }
                 System.out.println("Сумма елементов 1 диагонали равна: " + sumdia1);
